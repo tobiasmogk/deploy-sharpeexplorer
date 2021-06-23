@@ -1,3 +1,6 @@
-FROM ubuntu:18.04
+FROM python:3
+
+RUN pip install flask
+
 COPY . /app
-CMD python /app/app.py
+CMD [ "python", "./app/app.py" ]
