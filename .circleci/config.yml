@@ -17,4 +17,4 @@ jobs:
      
      - run: |
          ssh-add - <<< "$AZURE_SSH"
-         echo $AZURE_USER@$AZURE_IP 
+         echo "$AZURE_USER@$AZURE_IP" 
