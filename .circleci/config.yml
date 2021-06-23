@@ -15,4 +15,4 @@ jobs:
      # deploy the image
      - run: docker push  $DOCKER_USER/test:$CIRCLE_BRANCH
      
-     - run: ssh-add - <<< "$AZURE_SSH" && echo "$AZURE_USER $AZURE_IP" 
+     - run: ssh se_adm_dev@23.97.166.79 "ls"
